@@ -28,4 +28,16 @@ public class Pilha {
     public int pop(){
         return dados[--topo];
     }
+    
+    public int consultaTopo(){
+        return dados[topo-1];
+    }
+    
+    @Override
+    public String toString(){
+        String s = "";
+        for(i = topo-1; i>=0; i--)
+            s += dados[i] + " ";
+        return s;
+    }
 }
