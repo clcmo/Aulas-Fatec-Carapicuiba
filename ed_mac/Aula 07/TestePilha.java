@@ -10,5 +10,8 @@ public class TestePilha {
         while (!p.pilhaVazia()){
             System.out.println(p.pop() + " saiu");
         }
+        
+        System.out.println(p);
+        
     }
 }
