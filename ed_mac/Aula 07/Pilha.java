@@ -36,8 +36,9 @@ public class Pilha {
     @Override
     public String toString(){
         String s = "";
+        if(pilhaVazia()) s += "pilha vazia.\n";
         for(i = topo-1; i>=0; i--)
             s += dados[i] + " ";
-        return s;
+        return s+"\n";
     }
 }
