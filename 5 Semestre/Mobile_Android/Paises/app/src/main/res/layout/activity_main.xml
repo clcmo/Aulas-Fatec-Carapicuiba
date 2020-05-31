@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="clcmo.com.br.paises.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCountries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/countries_name"
+        android:textSize="@dimen/countries_textsize" />
+
+    <ImageView
+        android:id="@+id/imageViewCountries"
+        android:layout_width="@dimen/countries_imgsize"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:contentDescription="@string/countries_name"
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/countries_flags" />
+
+    <ImageView
+        android:id="@+id/imageViewFoods"
+        android:layout_width="@dimen/countries_imgsize"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:contentDescription="@string/countries_food"
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/countries_foods" />
+
+    <TextView
+        android:id="@+id/textViewFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/countries_food"
+        android:textSize="@dimen/countries_textsize" />
+
+</LinearLayout>
