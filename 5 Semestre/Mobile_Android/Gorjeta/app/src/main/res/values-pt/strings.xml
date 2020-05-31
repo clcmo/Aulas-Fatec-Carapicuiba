@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gorjeta</string>
+    <string name="tip">Taxa</string>
+    <string name="total">Total</string>
+    <string name="enter_amount">Insira um valor</string>
+</resources>

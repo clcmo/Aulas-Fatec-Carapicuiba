@@ -1,0 +1,13 @@
+<resources>
+    <!--Titulo-->
+    <string name="app_name">Gorjeta</string>
+    <!--Texto para as Strings-->
+
+
+    <string name="tip">Tip</string>
+    <string name="edtxtTip" />
+    <string name="tip_percentage">15%</string>
+    <string name="total">Total</string>
+    <string name="edtxtTotal"/>
+    <string name="enter_amount">Input a price</string>
+</resources>
