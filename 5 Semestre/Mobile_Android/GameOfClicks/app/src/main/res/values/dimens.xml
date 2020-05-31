@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_img_user">250</dimen>
+    <dimen name="dimen_app_margin">15</dimen>
+    <dimen name="dimen_text_user">14</dimen>
+</resources>

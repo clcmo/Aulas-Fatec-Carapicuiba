@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GameOfClicks</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="user_name">Name</string>
+    <string name="string_txt_user">Type your username</string>
+    <string name="button_user">Save</string>
+</resources>

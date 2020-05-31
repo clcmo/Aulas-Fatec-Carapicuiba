@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="countries_textsize">60dp</dimen>
+    <dimen name="countries_imgsize">250dp</dimen>
+</resources>
