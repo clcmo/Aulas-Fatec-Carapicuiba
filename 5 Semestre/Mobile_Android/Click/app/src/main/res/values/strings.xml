@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Click</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="permissao_GPS">Para exibir coordenadas o app precisa do GPS</string>
+    <string name="carregando_Mapa">Mapa não está pronto</string>
+    <string name="falta_sinal_GPS">Sem sinal GPS</string>
+    <string name="Check" translatable="false">Checkin</string>
+</resources>
