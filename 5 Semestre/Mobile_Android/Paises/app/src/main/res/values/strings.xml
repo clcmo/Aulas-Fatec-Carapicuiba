@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Countries</string>
+    <string name="countries_name">World</string>
+    <string name="countries_food">Hot Dog</string>
+</resources>

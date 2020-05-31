@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paesi</string>
+    <string name="countries_name">Italia</string>
+    <string name="countries_food">Spaghetti</string>
+</resources>

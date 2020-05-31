@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Notificacoes</string>
+    <string name="explicacao_gps">Precisamos do GPS para te informar a previsão do tempo</string>
+</resources>
