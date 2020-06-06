@@ -31,3 +31,26 @@ Valores apontados:
 |Extra             |123C |
 |Pilha             |1285 |
 
+- volte ao arquivo
+- descomente as linhas de códigos
+- recompile o projeto
+
+Valores apontados:
+
+|  Segmento        |Valor|
+|------------------|-----|
+|Codigo            |57H  |
+|Dados             |127H |
+|Extra             |205H |
+|Pilha             |FFFEH|
+
+- p-regseg
+
+|  Segmento        |Valor|
+|------------------|-----|
+|Codigo            |124C |
+|Dados             |125A |
+|Extra             |126D |
+|Pilha             |128E |
+
+Conclusão: o tamanho do segmento de código é maior.
