@@ -51,6 +51,7 @@ Se o ciclo de máquina de um processador cuja frequencia é de 500MHz é igual a
   
   O código da operação identifica a ação a ser realizada pela CPU (Soma, Subtração, etc.). Os operandos, cuja quantidade tipicamente é 1 , ou 3 são os elementos que sofrerão a ação executada pela CPU. 
   Estes opreandos podem ser classificados em: **imediatos**, **memória** e **registrador**, cujas instruções são classificadas em:
+    
     | Instruções                | O que é?                                       | Exemplo              |
     |---------------------------|------------------------------------------------|----------------------|
     | memória / memória         | os dois operandos estão em memória (restrito)  | mov x, y             |
