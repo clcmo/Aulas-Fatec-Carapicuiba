@@ -1,0 +1,125 @@
+Debug
+
+D - Deslocamento
+
+Se errar, pressione por tres vezes a tecla enter
+Debug 
+- L 0 0 0 70
+- A 3F
+- MOV AH, 0E
+- MOV AL, 41
+- MOV CX, 1A
+- INT 10H
+- INC AL
+- LOOP 46
+- INT 21H
+- MOV AH, 4C
+- INT 21H
+
+
+G=0
+EXIBE O ALFABETO
+
+G - Go
+Debug
+- E 0: 70 5B E0 00 F0
+- E 0: 14 00 00 FF FF
+- Print Screen
+(Reiniciou)
+
+
+F000:E05B(POST) => F0000 + E05B = FE05B
+FFFF:0000(RESET) => FFFF0 + 0000 = FFFF0
+
+Mapa de memória 8086
+
+Debug
+- I 0 0 0 70
+- I 0 0 0 70
+- U FFFF:0000
+LISTA DE COMANDOS E EXIBIDA
+-
+-
+- N A:\AUTOEXEC.BAT
+- L 0
+- D 0
+- Q
+
+TYPE AUTOEXEC.BAT
+
+DEBUG
+- H 5 4
+(EXIBE A SOMA E A SUBTRACAO EM HEXADECIMAL)
+- H A 9
+-Q
+
+
+------
+
+ARQUITETURA DA CPU 8086
+
+A BIU
+
+
+MOV CX, 3
+
+VOLTA:
+	ADD BX,1
+	SUB BX, 2
+	INC DH
+	DEC DL
+	ADD DX, -20
+-----
+	LOOP VOLTA
+
+CX = 3, 2, 1, 0
+QTDE VEZES = 1, 2, 3
+----------------
+
+CD ASM
+TYPE P-CHAR.ASM
+COPY P-CHAR.ASM P-CHARAB.ASM
+EDIT P-CHARAB.ASM
+
+ASM P-CHARAB.ASM
+(TRES ENTERS)
+
+LINK P-CHARAB
+(QUATRO ENTERS)
+DIR P-CHARAB.*
+
+P-CHARAB
+(MOSTRA APENAS A LETRA A)
+
+
+EDIT P-CHARAB.ASM
+MOV AH, 02
+MOV DL, 40H
+MOV CX, 26
+VOLTA: 
+	ADD DL, 1
+	INT 21H
+	LOOP VOLTA
+MOV AH, 4C
+INT 21H
+PROG1 ENDP
+SEG_COD ENDS
+END PROG1
+
+Salva e compila
+ASM P-CHARAB.ASM
+(TRES ENTERS)
+
+LINK P-CHARAB
+(QUATRO ENTERS)
+DIR P-CHARAB.*
+
+P-CHARAB
+(EXIBE TODO O ALFABETO)
+
+Como exibir o alfabeto em minusculo?
+41H = A
+61H = a
+
+---------------------
+TYPE P-CHARAB.ASM
