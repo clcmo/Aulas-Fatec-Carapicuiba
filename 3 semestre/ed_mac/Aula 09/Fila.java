@@ -1,21 +1,22 @@
 class Fila{
-  private int prim, ult, cont, aux;
+  private int prim = 0, ult = 0;
+  private int cont, aux;
   private int dados[];
   
   public Fila(){
     dados = new int[10];
-    prim = 0;
-    ult = 0;
   }
 
   public Fila(int tam){
     dados = new int[tam];
-    prim = 0;
-    ult = 0;
   }
 
-  int prox(int pos){
+  public int prox(int pos){
     return (pos+1) % dados.length;
+  }
+
+  public int ant(int pos){
+    return (dados.length + pos -1) % dados.length;
   }
 
   public boolean estaCheio(){
@@ -23,7 +24,7 @@ class Fila{
   }
 
   public boolean estaVazio(){
-    return (cont ==0);
+    return (cont == 0);
   }
 
   public void insere(int i){
@@ -39,16 +40,24 @@ class Fila{
     return aux;
   }
 
-  public int consultaPrim{
+  public int getPrim(){
     return dados[prim];
   }
 
-  public int consultaAnterior(int pos){
-    return (dados.lenght + pos -1) % dados.lenght;
+  public int getUlt(){
+    return dados[ant(ult)];
   }
 
-  public int consultaUlt(){
-    return dados[consultaAnterior(ult)];
+  @Override
+  public String toString(){
+    String s = "\n";
+    if(estaVazio()){
+      s += "Fila está vazia";
+    } else {
+      for(int i = prim; i!= ult; i=prox(i)){
+        s += dados[i] + " ";
+      }
+    }
+    return s += "\n";
   }
-
 }
