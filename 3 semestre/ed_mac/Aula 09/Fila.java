@@ -62,4 +62,12 @@ class Fila{
     }
     return s += "\n";
   }
+
+  public int getCont(){
+    return cont;
+  }
+
+  public int getDadosLenght(){
+    return dados.length;
+  }
 }
