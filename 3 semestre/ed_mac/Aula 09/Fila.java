@@ -54,9 +54,11 @@ class Fila{
     if(estaVazio()){
       s += "Fila está vazia";
     } else {
-      for(int i = prim; i!= ult; i=prox(i)){
+      int i = prim;
+      do{
         s += dados[i] + " ";
-      }
+        i = prox(i);
+      } while(i!= ult);
     }
     return s += "\n";
   }

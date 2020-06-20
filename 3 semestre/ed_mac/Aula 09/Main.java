@@ -8,5 +8,10 @@ public class Main{
       f.insere(i++);
       System.out.println(f);
     }
+
+    while(!f.estaVazio()){
+      System.out.println(f.remove() + "foi atendido");
+      System.out.println(f);
+    }
   }
 }
