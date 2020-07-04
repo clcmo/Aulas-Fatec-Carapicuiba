@@ -1,8 +1,10 @@
-class ListaSimples {
+class ListaIniFim {
 
-    private No prim;
-    public ListaSimples(){
-        prim = null;
+    private No prim, ult;
+
+    public ListaIniFim(){
+        setPrim(null);
+        setUlt(null);
     }
 
     public No getPrim() {
@@ -13,15 +15,21 @@ class ListaSimples {
         this.prim = prim;
     }
 
+    public No getUlt() {
+        return ult;
+    }
+
+    public void setUlt(No ult) {
+        this.ult = ult;
+    }
+
     public boolean listaVazia(){
         return this.prim == null;
     }
 
     public void insereInicio(int i){
         No novo = new No(i);
-        if(!listaVazia()){
-            novo.setProx(this.prim);
-        }
+        if(!listaVazia()) novo.setProx(this.prim);
         setPrim(novo);
     }
 
@@ -48,25 +56,21 @@ class ListaSimples {
         No novo = new No(i);
         if(listaVazia())
             setPrim(novo);
-        No aux = this.prim;
-        while (aux.getProx() != null){
-            aux = aux.getProx();
-        }
-        aux.setProx(novo);
+        else
+            getUlt().setProx(novo);
+        setUlt(novo);
     }
 
     public int removeFim(){
-        int i;
+        int i = this.ult.getInfo();
         if(this.prim.getProx() == null){
-            i = this.prim.getInfo();
+            setUlt(null);
             setPrim(null);
         } else {
             No aux = this.prim;
-            while (aux.getProx().getProx() != null){
-                aux = aux.getProx();
-            }
-            i = aux.getProx().getInfo();
+            while (aux.getProx().getProx() != this.ult) aux = aux.getProx();
             aux.setProx(null);
+            setUlt(aux);
         }
         return i;
     }

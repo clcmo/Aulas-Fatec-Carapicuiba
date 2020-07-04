@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static void testeLista(){
-        ListaSimples ls = new ListaSimples();
+        ListaIniFim ls = new ListaIniFim();
 //        System.out.println(ls.getPrim().getInfo());
         for(int i = 1; i <= 5; i++){
             ls.insereInicio(i);
