@@ -1,4 +1,6 @@
-class No {
+package no;
+
+public class No {
     private int info;
     private No prox;
 
@@ -26,7 +28,7 @@ class No {
 
     @Override
     public String toString() {
-        return "No{" +
+        return "no.No{" +
                 "info=" + info +
                 ", prox=" + prox +
                 '}';

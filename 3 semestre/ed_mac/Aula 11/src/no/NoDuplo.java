@@ -1,6 +1,12 @@
+package no;
+
 public class NoDuplo {
     private int info;
     private NoDuplo prox, ant;
+
+    public NoDuplo(int i) {
+        info = i;
+    }
 
     public int getInfo() {
         return info;
@@ -28,7 +34,7 @@ public class NoDuplo {
 
     @Override
     public String toString() {
-        return "NoDuplo{" +
+        return "no.NoDuplo{" +
                 "info=" + info +
                 '}';
     }

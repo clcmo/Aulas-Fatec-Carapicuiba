@@ -1,4 +1,8 @@
-class ListaIniFim {
+package lista;
+
+import no.No;
+
+public class ListaIniFim {
 
     private No prim, ult;
 
