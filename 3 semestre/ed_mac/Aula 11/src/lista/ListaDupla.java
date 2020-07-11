@@ -48,4 +48,18 @@ public class ListaDupla {
         }
         return i;
     }
+
+    public void insereFim(int i) {
+        NoDuplo novo = new NoDuplo(i);
+        if (listaVazia()) {
+            prim = novo;
+            novo.setAnt(novo);
+            novo.setProx(novo);
+        } else {
+            novo.setAnt(prim.getAnt());
+            novo.setProx(prim);
+            novo.getAnt().setProx(novo);
+            novo.getProx().setAnt(novo);
+        }
+    }
 }
